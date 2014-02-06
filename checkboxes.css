@@ -1,0 +1,38 @@
+/* reset */
+*{padding:0;margin:0;list-style:none;border:0;outline:none}
+html, body {height:100%}
+input[type="submit"] {cursor:pointer; -webkit-appearance:none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {display: block;}
+a:focus {outline: thin dotted;}
+a:active, a:hover {outline: 0;}
+button,input,select,textarea {font-size: 100%; vertical-align: baseline; *vertical-align: middle; font-family: 'Lucida Sans', Helvetica, Arial, Sans;}
+input[type="search"] {-webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box;}
+img {vertical-align: middle;}
+button,input {line-height: normal;}
+
+/* fonts */
+html {font-size:62.5%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+body {font-size:1.6rem} /* same as 16px */
+.ie8 {font-size:16px} /* ie8 fallback */
+.ie8 body {font-size:16px} /* ie8 fallback */
+h1 {font-size:2.4rem} /* same as 24px */
+p {font-size:1.3rem; line-height:1.6rem} /* same as 12px */
+
+/* body */
+body {
+font-family: 'Lucida Sans', Helvetica, Arial, Sans;
+color:#333;
+font-weight: 400;
+}
+
+/* checkboxes */
+.checkbox {position:relative;line-height:22px;margin-bottom:10px;cursor:pointer}
+.checkbox * {cursor:pointer}
+.checkbox:not(#foo) > input[type="checkbox"] {position:absolute;width:22px;height:22px;overflow:hidden;margin:0;padding:0;border:0;outline:0;opacity:0;}
+.checkbox:not(#foo) > input[type="checkbox"] + label:before {content:" ";display:inline-block;width:22px;height:22px;margin-right:5px;	background:url('checkboxes.png') no-repeat;vertical-align:top;}
+.checkbox:not(#foo) > input[type="checkbox"] + label:before {background-position:0 0;}
+.checkbox:not(#foo) > input[type="checkbox"]:focus + label:before {background-position:0 0;}
+.checkbox:not(#foo) > input[type="checkbox"]:checked + label:before {background-position:0 -36px;}
+.checkbox:not(#foo) > input[type="checkbox"]:checked:focus + label:before {background-position:0 -36px;}
+.checkbox:not(#foo) > input[type="checkbox"]:checked + label {color:#1b7cb1;font-weight:bold;}	
+
