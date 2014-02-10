@@ -25,7 +25,7 @@ color:#333;
 font-weight: 400;
 }
 
-/* checkboxes - img hosted on codekod */
+/* checkboxes - sprite img hosted on codekod */
 form {padding:10px;}
 .checkbox {position:relative;line-height:22px;margin-bottom:10px;cursor:pointer}
 .checkbox * {cursor:pointer}
